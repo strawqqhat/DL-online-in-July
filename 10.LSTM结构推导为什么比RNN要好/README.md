@@ -1,0 +1,1 @@
+推导forget gate，input gate，cell state，hidden information等的变化；因为LSTM有进有出且当前的cell information是通过input gate控制之后叠加的，RNN是叠乘，因此LSTM可以防止梯度消失或爆炸。

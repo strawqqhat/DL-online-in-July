@@ -1,0 +1,3 @@
+在faster rcnn中，anchor的作用是代替以往rcnn使用的选择搜索方法寻找图片里可能存在物体的区域。
+
+当一张图片输入resnet或vgg，在最后一层的特征图上面，寻找可能出现物体的位置，这时候分别以这张特征图的每一个点为中心，在原图上画出9个尺寸不同的anchor。然后计算anchor与GT(ground truth) box的iou，满足一定iou条件的anchor，便认为是这个anchor包含了某个物体。
